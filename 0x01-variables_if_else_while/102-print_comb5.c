@@ -18,18 +18,21 @@ int main(void)
 			k = i;
 			while (k <= 9)
 			{
-				l = j + 1;
+				l = j;
 				while (l <= 9)
 				{
-					putchar((i % 100) + '0');
-					putchar((j % 100) + '0');
-					putchar(' ');
-					putchar((k % 100) + '0');
-					putchar((l % 100) + '0');
-					if (!(j == 8 && i == 9))
+					if (!(i == k && j == l))
 					{
-						putchar(',');
+						putchar((i % 100) + '0');
+						putchar((j % 100) + '0');
 						putchar(' ');
+						putchar((k % 100) + '0');
+						putchar((l % 100) + '0');
+						if (!(j == 8 && i == 9))
+						{
+							putchar(',');
+							putchar(' ');
+						}
 					}
 					++l;
 				}
