@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "holberton.h"
 
 /**
@@ -14,13 +13,22 @@ void times_table(void)
 		for (j = 0; j <= 9; ++j)
 		{
 			product = i * j;
-			printf("%3d", product);
-			if (j != 9)
+			if (j != 0)
 			{
-				putchar(',');
-				putchar(' ');
+				_putchar(',');
+				_putchar(' ');
+			}
+			if (product <= 9)
+			{
+				_putchar(' ');
+				_putchar('0' + product);
+			}
+			else
+			{
+				_putchar('0' + (product / 10));
+				_putchar('0' + (product % 10));
 			}
 		}
-		putchar('\n');
+		_putchar('\n');
 	}
 }
