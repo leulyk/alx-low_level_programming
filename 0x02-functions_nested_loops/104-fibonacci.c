@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * main - Entry point (code not working)
  *
  * Description: print the first 98 fibonacci numbers
  * without using long long, malloc, pointers, arrays or structures
