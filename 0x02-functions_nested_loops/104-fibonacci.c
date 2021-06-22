@@ -9,7 +9,7 @@
  */
 int main(void)
 {
-	float prev, curr, temp;
+	double prev, curr, temp;
 	int i;
 
 	i = 1;
