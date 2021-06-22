@@ -9,20 +9,20 @@
  */
 int main(void)
 {
-	long long prev, curr, temp;
+	long prev, curr, temp;
 	int i;
 
 	i = 1;
 	prev = 1;
 	curr = 2;
-	printf("%lld, %lld, ", prev, curr);
-	while (i <= 98)
+	printf("%ld, %ld, ", prev, curr);
+	while (i <= 48)
 	{
 		temp = curr;
 		curr += prev;
 		prev = temp;
-		printf("%lld", curr);
-		if (i != 98)
+		printf("%ld", curr);
+		if (i != 48)
 			printf(", ");
 		++i;
 	}
