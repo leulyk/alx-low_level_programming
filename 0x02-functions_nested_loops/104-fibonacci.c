@@ -9,19 +9,19 @@
  */
 int main(void)
 {
-	double prev, curr, temp;
+	long double prev, curr, temp;
 	int i;
 
 	i = 1;
 	prev = 1;
 	curr = 2;
-	printf("%.0f, %.0f, ", prev, curr);
+	printf("%.0Lf, %.0Lf, ", prev, curr);
 	while (i <= 96)
 	{
 		temp = curr;
 		curr += prev;
 		prev = temp;
-		printf("%.0f", curr);
+		printf("%.0Lf", curr);
 		if (i != 96)
 			printf(", ");
 		++i;
