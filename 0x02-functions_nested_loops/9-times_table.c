@@ -17,10 +17,11 @@ void times_table(void)
 			{
 				_putchar(',');
 				_putchar(' ');
+				if (product <= 9)
+					_putchar(' ');
 			}
 			if (product <= 9)
 			{
-				_putchar(' ');
 				_putchar('0' + product);
 			}
 			else
