@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 
 int is_prime(long num);
 /**
