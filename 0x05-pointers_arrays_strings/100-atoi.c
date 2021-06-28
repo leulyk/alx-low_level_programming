@@ -8,11 +8,12 @@ int _pow(int base, int exp);
  */
 int _atoi(char *str)
 {
-	int result;
+	unsigned int result;
 	int i, j, neg;
 
 	neg = 0;
 	result = 0;
+	j = -1;
 	for (i = 0; str[i] != '\0'; ++i)
 	{
 		if (str[i] == '-')
@@ -35,7 +36,7 @@ int _atoi(char *str)
 	}
 	for (; i <= j; ++i)
 		result += (str[i] - '0') * _pow(10, (j - i));
-	if (neg == 1)
+	if (result != 0 && neg == 1)
 		result = -result;
 	return (result);
 }
