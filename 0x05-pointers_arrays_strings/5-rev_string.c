@@ -18,6 +18,11 @@ void rev_string(char *str)
 	}
 }
 
+/**
+ * _strlen - evaluate the length of a string
+ * @str: the string to be processed
+ * Return: the length of the the string
+ */
 int _strlen(char *str)
 {
 	int i;
