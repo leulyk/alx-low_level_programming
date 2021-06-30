@@ -1,12 +1,12 @@
 #include "holberton.h"
 
 /**
- * _strcpy - copy a string to the end of another string
+ * _strcat - concatenate two strings
  * @dest: string to be copied to
  * @src: string to copy
  * Return: a pointer to the resulting string @dest
  */
-char *_strcpy(char *dest, char *src)
+char *_strcat(char *dest, char *src)
 {
 	int i, j;
 
