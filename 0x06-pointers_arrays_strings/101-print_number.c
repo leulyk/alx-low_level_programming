@@ -36,13 +36,13 @@ void print_number(int n)
 		_putchar('0' + digit);
 		--degree;
 	}
-	_putchar('0' + (n % 10));	
+	_putchar('0' + (n % 10));
 	if (n != 0)
 		_putchar('0' + last);
 }
 
 /**
- * pow - compute the power the a base to its exponent
+ * _pow - compute the power the a base to its exponent
  *
  * @base: the base
  * @exponent: the exponent
