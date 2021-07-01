@@ -15,20 +15,20 @@
  */
 char *leet(char *str)
 {
-	int i;
+	char ch[] = "aAeEoOtTlL";
+	char leet[] = "4433007711";
+	int i, j;
 
 	for (i = 0; str[i] != '\0'; ++i)
 	{
-		if (str[i] == 'a' || str[i] == 'A')
-			str[i] = '4';
-		if (str[i] == 'e' || str[i] == 'E')
-			str[i] = '3';
-		if (str[i] == 'o' || str[i] == 'O')
-			str[i] = '0';
-		if (str[i] == 't' || str[i] == 'T')
-			str[i] = '7';
-		if (str[i] == 'l' || str[i] == 'L')
-			str[i] = '1';
+		for (j = 0; ch[j] != '\0'; ++j)
+		{
+			if (str[i] == ch[j])
+			{
+				str[i] = leet[j];
+				break;
+			}
+		}
 	}
 	return (str);
 }
