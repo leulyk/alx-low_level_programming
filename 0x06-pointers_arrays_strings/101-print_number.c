@@ -10,8 +10,8 @@ unsigned int _pow(int base, int exponent);
  */
 void print_number(int n)
 {
-	unsigned int num, ntemp, digit;
-	int degree;
+	unsigned int num, ntemp;
+	int degree, digit;
 
 	num = n;
 	if (n < 0)
