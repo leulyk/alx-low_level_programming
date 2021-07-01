@@ -13,28 +13,16 @@ int is_separator(char ch);
  */
 char *cap_string(char *str)
 {
-	int i, inword;
+	int i, j;
 
-	inword = 1;
-	for (i = 0; str[i] != '\0'; ++i)
+	for (i = 1; *(str + i) != '\0'; ++i)
 	{
-		if (is_separator(str[i]))
-		{
-			inword = 0;
-		}
-		else
-		{
-			if ((str[i] >= 'a' && str[i] <= 'z') ||
-				(str[i] >= 'A' || str[i] <= 'Z'))
-			{
-				if (!inword)
-				{
-					inword = 1;
-					if (str[i] >= 'a' && str[i] <= 'z')
-						str[i] -= 32;
-				}
-			}
-		}
+		j = i - 1;
+		if (j == 0 && (*(str +j) >= 'a' && *(str + j) <= 'z'))
+			*(str + i) -= 32;
+		if (is_separator(*(str + j)))
+			if (*(str + i) >= 'a' && *(str + i) <= 'z')
+				*(str + i) -= 32;
 	}
 	return (str);
 }
