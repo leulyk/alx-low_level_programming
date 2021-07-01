@@ -31,8 +31,6 @@ void print_number(int n)
 	while (degree >= 1)
 	{
 		digit = (n / _pow(10, degree)) % 10;
-		if (digit < 0)
-			digit *= -1;
 		_putchar('0' + digit);
 		--degree;
 	}
