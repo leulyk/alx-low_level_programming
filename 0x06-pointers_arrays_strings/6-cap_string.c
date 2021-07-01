@@ -1,8 +1,5 @@
 #include "holberton.h"
 
-#define IN 1
-#define OUT 0
-
 /**
  * cap_string - capitalize all words of a string
  *
@@ -15,30 +12,19 @@
  */
 char *cap_string(char *str)
 {
-	int i, state;
+	int i, j;
 
-	state = IN;
-	for (i = 0; str[i] != '\0'; ++i)
+	for (j = 1; str[i] != '\0'; ++j)
 	{
-		if (str[i] == ' ' || str[i] == '\n' || str[i] == '\t' ||
-			str[i] == '.' || str[i] == ',' || str[i] == ';' ||
-			str[i] == '!' || str[i] == '?' || str[i] == '\"' ||
-			str[i] == '(' || str[i] == ')' || str[i] == '{' ||
-			str[i] == '{')
+		i = j - 1;
+		if (str[i] == ' ' || str[i] == '\n' || str[i] == '\t' || str[i] == '.' ||
+			str[i] == ',' || str[i] == ';' || str[i] == '!' || str[i] == '?' ||
+				str[i] == '\"' || str[i] == '(' || str[i] == ')' || str[i] == '{' ||
+					str[i] == '{')
 		{
-			state = OUT;
-		}
-		else
-		{
-			if (state == OUT)
-			{
-				state = IN;
-				if (str[i] >= 'a' && str[i] <= 'z')
-				{
-					str[i] -= 32;
-				}
-			}
-		}
+			if (str[j] >= 'a' && str[i] <= 'z')
+				str[j] -= 32;
+		}		
 	}
 	return (str);
 }
