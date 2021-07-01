@@ -10,35 +10,30 @@ unsigned int _pow(int base, int exponent);
  */
 void print_number(int n)
 {
-	int temp, degree, digit, last;
+	unsigned int num, ntemp, digit;
+	int degree;
 
-	degree = 0;
-	last = n % 10;
-	if (last < 0)
-		last *= -1;
-	n /= 10;
+	num = n;
 	if (n < 0)
 	{
-		n *= -1;
+		num = -num;
 		_putchar('-');
 	}
-	temp = n;
-	while (temp >= 10)
+	ntemp = num;
+	degree = 0;
+	while (ntemp >= 10)
 	{
-		temp /= 10;
+		ntemp /= 10;
 		++degree;
 	}
 	while (degree >= 1)
 	{
-		digit = (n / _pow(10, degree)) % 10;
+		digit = (num / _pow(10, degree)) % 10;
 		_putchar('0' + digit);
 		--degree;
 	}
-	_putchar('0' + (n % 10));
-	if (n != 0)
-		_putchar('0' + last);
+	_putchar('0' + num % 10);
 }
-
 /**
  * _pow - compute the power the a base to its exponent
  *
