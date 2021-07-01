@@ -13,17 +13,19 @@ int is_separator(char ch);
  */
 char *cap_string(char *str)
 {
-	int i, j;
+	int i;
 
-	for (i = 1; *(str + i) != '\0'; ++i)
+	i = 0;
+	if (str[i] >= 97 && str[i] <= 122)
+		str[i] -= 32;
+	for (i = 1; str[i] != '\0'; ++i)
 	{
-		j = i - 1;
-		if (j == 0 && (*(str +j) >= 'a' && *(str + j) <= 'z'))
-			*(str + i) -= 32;
-		if (is_separator(*(str + j)))
-			if (*(str + i) >= 'a' && *(str + i) <= 'z')
-				*(str + i) -= 32;
+		if (is_separator(str[i - 1]))
+			if (str[i] >= 97 && str[i] <= 122)
+				str[i] -= 32;
 	}
+	if (str[i - 1] >= 97 && str[i - 1] <= 122)
+		str[i - 1] -= 32;
 	return (str);
 }
 
