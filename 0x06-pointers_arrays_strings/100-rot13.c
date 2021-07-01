@@ -12,19 +12,19 @@
  */
 char *rot13(char *str)
 {
-	int i;
+	int i, j;
+	char alpha[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	char cipher[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 
 	for (i = 0; str[i] != '\0'; ++i)
 	{
-		if ((str[i] >= 'a' && str[i] <= 'm') ||
-			(str[i] >= 'A' && str[i] <= 'M'))
+		for (j = 0; alpha[j] != '\0'; ++j)
 		{
-			str[i] += 13;
-		}
-		else if ((str[i] >= 'n' && str[i] <= 'z') ||
-			(str[i] >= 'N' && str[i] <= 'Z'))
-		{
-			str[i] -= 13;
+			if (str[i] == alpha[j])
+			{
+				str[i] = cipher[j];
+				break;
+			}
 		}
 	}
 	return (str);
