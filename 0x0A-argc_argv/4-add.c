@@ -16,18 +16,21 @@
 int main(int argc, char *argv[])
 {
 	int i, sum;
+	char *ptr;
 
 	sum = 0;
 	for (i = 1; i < argc; ++i)
 	{
-		if (atoi(argv[i]) < 1)
+		strtol(argv[i], &ptr, 10);
+		if (*ptr == '\0')
 		{
-			if (*argv[i] == '0')
-				continue;
+			sum += atoi(argv[i]);
+		}
+		else
+		{
 			printf("Error\n");
 			return (1);
 		}
-		sum += atoi(argv[i]);
 	}
 	printf("%d\n", sum);
 	return (0);
