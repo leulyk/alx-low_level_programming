@@ -7,9 +7,9 @@
  * @argc: argument count
  * @argv: arguments as array of strings
  *
- * Description: print the name of the file
+ * Description: print the name of the program
  *
- * return: 0 (success)
+ * Return: 0 (success)
  */
 int main(int __attribute__((unused)) argc, char *argv[])
 {
