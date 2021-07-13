@@ -15,19 +15,18 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	char *fullstr, *empty;
-	int len1, len2, i, j;
+	char *fullstr;
+	int len1, len2, i;
 
-	empty = "";
 	if (s1 == NULL)
-		s1 = empty;
+		s1 = "";
 	if (s1 == NULL)
-		s2 = empty;
+		s2 = "";
 
 	len1 = len2 = 0;
 	while (s1[len1] != '\0')
 		len1++;
-	while (s1[len2] != '\0')
+	while (s2[len2] != '\0')
 		len2++;
 
 	fullstr = malloc(sizeof(*s1) * (len1 + len2 + 1));
