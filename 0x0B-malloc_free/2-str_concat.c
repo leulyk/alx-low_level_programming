@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <stdio.h>
 #include "holberton.h"
 
 /**
@@ -19,23 +20,26 @@ char *str_concat(char *s1, char *s2)
 
 	len1 = len2 = 0;
 	if (s1 == NULL)
-		s1 = "";
+		*s1 = '\0';
 	if (s1 == NULL)
-		s2 = "";
-	while (*(s1 + len1++))
-		;
-	while (*(s2 + len2++))
-		;
+		*s2 = '\0';
+	while (*(s1 + len1))
+		len1++;
+	while (*(s2 + len2))
+		len2++;
 	totallen = len1 + len2;
-	fullstr = malloc((totallen) * sizeof(char) + 1);
+	fullstr = malloc((totallen + 1)  * sizeof(char));
 	if (fullstr == NULL)
 		return (NULL);
-
+	
 	i = 0;
 	while (*s1)
 		*(fullstr + i++) = *s1++;
 	while (*s2)
 		*(fullstr + i++) = *s2++;
+	*(fullstr + i) = '\0';
 
-	return (fullstr);
+	if (fullstr)
+		return (fullstr);
+	return (NULL);
 }
