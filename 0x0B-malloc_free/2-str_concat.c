@@ -31,15 +31,14 @@ char *str_concat(char *s1, char *s2)
 	fullstr = malloc((totallen + 1)  * sizeof(char));
 	if (fullstr == NULL)
 		return (NULL);
-	
+
 	i = 0;
 	while (*s1)
 		*(fullstr + i++) = *s1++;
 	while (*s2)
 		*(fullstr + i++) = *s2++;
-	*(fullstr + i) = '\0';
 
-	if (fullstr)
-		return (fullstr);
-	return (NULL);
+	if (!i)
+		return (NULL);
+	return (fullstr);
 }
