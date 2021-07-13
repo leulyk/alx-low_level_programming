@@ -1,50 +1,50 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include "holberton.h"
 
 /**
- * str_concat - concatenate two strings
+ * str_concat - Concatenate two strings
+ * @s1: First string
+ * @s2: Second string
  *
- * @s1: first string
- * @s2: second string
+ * Desciption: treat null strings as empty
  *
- * Description: if NULL is passed, treat as empty string
- *
- * Return: pointer to a newly allocated string which contains contents
- *	   of @s1 followed by @s2, and null terminated, otherwise NULL
+ * Return: Pointer to new space in memory, NULL if it fails
  */
 char *str_concat(char *s1, char *s2)
 {
-	char *fullstr;
-	int len1, len2, i;
+	char *str;
+	int i, len1, len2, j;
 
 	if (s1 == NULL)
 		s1 = "";
-	if (s1 == NULL)
+	if (s2 == NULL)
 		s2 = "";
-
-	len1 = len2 = 0;
+	i = len1 = len2 = 0;
 	while (s1[len1] != '\0')
+	{
 		len1++;
+	}
 	while (s2[len2] != '\0')
+	{
 		len2++;
+	}
 
-	fullstr = malloc(sizeof(*s1) * (len1 + len2 + 1));
-	if (fullstr == NULL)
+	str = malloc((len1 + len2 + 1) * sizeof(*s1));
+	if (str == NULL)
 		return (NULL);
 
 	i = 0;
-	while (*s1)
+	while (i < len1)
 	{
-		*(fullstr + i) = *s1++;
-		++i;
+		str[i] = s1[i];
+		i++;
 	}
-	while (*s2)
+	j = 0;
+	while (j <= len2)
 	{
-		*(fullstr + i) = *s2++;
-		++i;
+		str[i] = s2[j];
+		i++;
+		j++;
 	}
-	*(fullstr + i) = '\0';
-
-	return (fullstr);
+	return (str);
 }
