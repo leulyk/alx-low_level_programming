@@ -41,10 +41,13 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	for (i = 0; i < len1; i++)
 		*(s + i) = *(s1 + i);
 
-	for (i = 0, j = len1; i < len2; j++, i++)
-		*(s + j) = *(s2 + i);
-
-	*(s + j) = '\0';
+	for (i = 0, j = len1; i <= len2; j++, i++)
+	{
+		if (i == len2)
+			*(s + j) = '\0';
+		else
+			*(s + j) = *(s2 + i);
+	}
 
 	return (s);
 }
