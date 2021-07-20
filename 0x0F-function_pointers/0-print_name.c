@@ -10,5 +10,6 @@
  */
 void print_name(char *name, void (*func)(char *))
 {
-	func(name);
+	if (func != 0)
+		func(name);
 }
