@@ -14,7 +14,7 @@
  */
 int main(int argc, char *argv[])
 {
-	long result;
+	int result;
 	int (*func)(int, int);
 
 	if (argc != 4 || (argv[2][0] != '*' && argv[2][0] != '+' &&
@@ -33,7 +33,7 @@ int main(int argc, char *argv[])
 	if (func != 0)
 	{
 		result = func(atoi(argv[1]), atoi(argv[3]));
-		printf("%ld\n", result);
+		printf("%d\n", result);
 	}
 
 	return (0);
