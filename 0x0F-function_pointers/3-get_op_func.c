@@ -1,8 +1,6 @@
 #include "3-calc.h"
 #include <stddef.h>
 
-int _strcmp(char *s1, char *s2);
-
 /**
  * get_op_func - return a function to compute an operation on two integers
  *
