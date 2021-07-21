@@ -7,8 +7,8 @@
  * @argc: command line argument count
  * @argv: command line arguments as string array
  *
- * Description: write a program that prints out specific bytes of the opcodes of
- * its main program
+ * Description: write a program that prints out specific bytes of the
+ * opcodes of its main program
  *
  * Return: 0 (success)
  */
