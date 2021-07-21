@@ -18,25 +18,27 @@ int main(int argc, char *argv[])
 	int result;
 	int (*func)(int, int);
 
-	if (argc != 4 || (argv[2][0] != '*' && argv[2][0] != '+' &&
+	if (argc != 4)
+	{
+		printf("Error\n");
+		exit(98);
+	}
+	if ((argv[2][0] != '*' && argv[2][0] != '+' &&
 		argv[2][0] != '/' && argv[2][0] != '-' && argv[2][0] != '%')
 			|| strlen(argv[2]) != 1)
 	{
 		printf("Error\n");
-		return (1);
+		exit(99);
 	}
 	if ((argv[2][0] == '/' || argv[2][0] == '%') && atoi(argv[3]) == 0)
 	{
 		printf("Error\n");
-		return (2);
+		exit(100);
 	}
 	result = 0;
 	func = get_op_func(argv[2]);
-	if (func != 0)
-	{
-		result = func(atoi(argv[1]), atoi(argv[3]));
-		printf("%d\n", result);
-	}
+	result = func(atoi(argv[1]), atoi(argv[3]));
+	printf("%d\n", result);
 
 	return (0);
 }
