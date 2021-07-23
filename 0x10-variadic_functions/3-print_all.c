@@ -37,8 +37,7 @@ void print_all(const char *const format, ...)
 				if (printed)
 					printf(", ");
 				print[i].print_func(list);
-				if (!printed)
-					printed = 1;
+				printed = 1;
 				break;
 			}
 			++j;
