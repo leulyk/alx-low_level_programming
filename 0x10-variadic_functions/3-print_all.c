@@ -3,6 +3,11 @@
 #include <stdarg.h>
 #include "variadic_functions.h"
 
+void print_char(va_list list);
+void print_int(va_list list);
+void print_float(va_list list);
+void print_string(va_list list);
+
 /**
  * print_all - print different types of data types
  *
@@ -29,7 +34,7 @@ void print_all(const char *const format, ...)
 
 	va_start(list, format);
 	i = 0;
-	while (format[i])
+	while (format && format[i])
 	{
 		j = 0;
 		while (print[j].arg)
