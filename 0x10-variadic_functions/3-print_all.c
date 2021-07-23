@@ -28,6 +28,7 @@ void print_all(const char *const format, ...)
 	char *sep = "";
 
 	va_start(list, format);
+	i = 0;
 	while (format[i])
 	{
 		j = 0;
@@ -93,6 +94,6 @@ void print_string(va_list list)
 
 	str = va_arg(list, char *);
 	if (str == NULL)
-		printf("(nil)");
+		str = "(nil)";
 	printf("%s", str);
 }
