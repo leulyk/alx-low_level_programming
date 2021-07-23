@@ -21,12 +21,13 @@ void print_all(const char *const format, ...)
 		{ 'i', print_int },
 		{ 'f', print_float },
 		{ 's', print_string },
+		{ 0, NULL }
 	};
 	va_list list;
-	int i, j, printed;
+	int i, j;
+	char *sep = "";
 
 	va_start(list, format);
-	printed = i = 0;
 	while (format[i])
 	{
 		j = 0;
@@ -34,10 +35,9 @@ void print_all(const char *const format, ...)
 		{
 			if (format[j] == print[i].arg)
 			{
-				if (printed)
-					printf(", ");
+				printf("%s", sep);
 				print[i].print_func(list);
-				printed = 1;
+				sep = ", ";
 				break;
 			}
 			++j;
@@ -78,10 +78,7 @@ void print_int(va_list list)
  */
 void print_float(va_list list)
 {
-	double d;
-
-	d = va_arg(list, double);
-	printf("%f", (float)d);
+	printf("%f", va_arg(list, double));
 }
 
 /**
@@ -95,8 +92,7 @@ void print_string(va_list list)
 	char *str;
 
 	str = va_arg(list, char *);
-	if (str)
-		printf("%s", str);
-	else
+	if (str == NULL)
 		printf("(nil)");
+	printf("%s", str);
 }
