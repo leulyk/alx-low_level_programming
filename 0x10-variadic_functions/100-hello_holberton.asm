@@ -1,7 +1,7 @@
-section .text
-	global _start
+	global main
 
-_start:
+	section .text
+main:
 	mov edx, len
 	mov ecx, msg
 	mov ebx, 1
