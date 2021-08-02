@@ -1,5 +1,4 @@
 # 0x13 C. More singly linked lists
-------------------------------------------------------------------------------------------------------------------
 
 ## Learning Objectives
 
@@ -9,7 +8,6 @@ At the end of this project, you are expected to be able to explain to anyone:
     Start to look for the right source of information without too much help
 
 ## Mandatory Tasks
-------------------------------------------------------------------------------------------------------------------
 
 ### 0. Print list
 
@@ -93,7 +91,6 @@ At the end of this project, you are expected to be able to explain to anyone:
     	Returns: 1 if it succeeded, -1 if it failed
 
 ## Advanced tasks
-------------------------------------------------------------------------------------------------------------------
 
 ### 11. Reverse list
 
