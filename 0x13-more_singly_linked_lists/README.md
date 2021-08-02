@@ -1,6 +1,6 @@
 # 0x13 C. More singly linked lists
 
-** This folder contains solutions to exercises on singly linked lists from the ALX software engineering program. **
+This folder contains solutions to exercises on singly linked lists from the ALX software engineering program.
 
 ## Learning Objectives
 
