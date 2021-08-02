@@ -1,5 +1,7 @@
 # 0x13 C. More singly linked lists
 
+** This folder contains solutions to exercises on singly linked lists from the ALX software engineering program. **
+
 ## Learning Objectives
 
 At the end of this project, you are expected to be able to explain to anyone:
@@ -15,7 +17,6 @@ At the end of this project, you are expected to be able to explain to anyone:
 
     	Prototype: size_t print_listint(const listint_t *h);
     	Return: the number of nodes
-    	Format: see example
     	You are allowed to use printf
 
 ### 1. List length 
