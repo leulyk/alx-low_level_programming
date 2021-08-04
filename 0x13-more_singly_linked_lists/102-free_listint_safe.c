@@ -2,7 +2,7 @@
 #include "lists.h"
 
 /**
- * free_listint_safe - frees a listint_t list
+ * free_listint_safe - frees a singly linked list (safe version)
  *
  * @h: pointer to head of singly linked list
  *
