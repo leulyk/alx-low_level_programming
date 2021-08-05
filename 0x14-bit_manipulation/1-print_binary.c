@@ -9,7 +9,7 @@
 void print_binary(unsigned long int num)
 {
 	unsigned long int i;
-	int found;
+	int found, size;
 
 	if (num == 0)
 	{
@@ -18,7 +18,8 @@ void print_binary(unsigned long int num)
 	}
 
 	found = 0;
-	for (i = (1 << 30); i > 0; i >>= 1)
+	size = (sizeof(num) * 4) - 2;
+	for (i = (1 << size); i > 0; i >>= 1)
 	{
 		if ((num & i))
 		{
