@@ -17,7 +17,7 @@ void print_binary(unsigned long int num)
 	}
 
 	found = 0;
-	for (i = (1 << 30); i > 0; i /= 2)
+	for (i = (1 << 30); i > 0; i >>= 1)
 	{
 		if ((num & i))
 		{
