@@ -8,7 +8,8 @@
  */
 void print_binary(unsigned long int num)
 {
-	int i, found;
+	unsigned long int i;
+	int found;
 
 	if (num == 0)
 	{
