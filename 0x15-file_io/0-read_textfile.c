@@ -4,6 +4,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include "main.h"
+#include "holberton.h"
 
 /**
  * read_textfile - reads a text file and prints it to the
