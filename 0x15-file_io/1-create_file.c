@@ -26,11 +26,11 @@ int create_file(const char *filename, char *text_content)
 {
 	int fd;
 	long length, write_count;
-		
+
 	fd = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 00600);
 	if (fd == -1 || filename == NULL)
-		return (-1);	
-	
+		return (-1);
+
 	if (text_content != NULL)
 	{
 		length = _strlen(text_content);
