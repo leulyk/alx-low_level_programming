@@ -27,7 +27,7 @@
 int main(int argc, char **argv)
 {
 	Elf64_Ehdr *header;
-	size_t read_count;
+	ssize_t read_count;
 	int fd, close_status;
 
 	if (argc != 2)
