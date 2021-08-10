@@ -1,4 +1,4 @@
-# 0x15. C - File I/O
+# [0x15. C - File I/O](https://github.com/leulyk/alx-low_level_programming/tree/main/0x15-file_io)
 
 ## Learning Objectives
 
@@ -14,7 +14,7 @@
 
 ## Mandatory Tasks
 
-### 0. Tread lightly, she is near
+### [0. Tread lightly, she is near](https://github.com/leulyk/alx-low_level_programming/blob/main/0x15-file_io/0-read_textfile.c)
 
 	Write a function that reads a text file and prints it to the POSIX standard output.
 
@@ -25,7 +25,7 @@
 	    if filename is NULL return 0
 	    if write fails or does not write the expected amount of bytes, return 0
 
-### 1. Under the snow
+### [1. Under the snow](https://github.com/leulyk/alx-low_level_programming/blob/main/0x15-file_io/1-create_file.c)
 
 	Create a function that creates a file.
 
@@ -37,7 +37,7 @@
 	    if filename is NULL return -1
 	    if text_content is NULL create an empty file
 
-### 2. Speak gently,she can hear
+### 2. [Speak gently,she can hear](https://github.com/leulyk/alx-low_level_programming/blob/main/0x15-file_io/2-append_text_to_file.c)
 
 	 Write a function that appends text at the end of a file.
 
@@ -48,7 +48,7 @@
 	    If filename is NULL return -1
 	    If text_content is NULL, do not add anything to the file. Return 1 if the file exists and -1 if the file does not exist or if you do not have the required permissions to write the file
 
-### 3. cp
+### 3. [cp](https://github.com/leulyk/alx-low_level_programming/blob/main/0x15-file_io/3-cp.c)
 
 	Write a program that copies the content of a file to another file.
 
