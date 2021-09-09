@@ -9,7 +9,7 @@
 
 ## Projects
 
-- ### [Hello world, and the compilation process in C](https://github.com/leulyk/alx-low_level_programming/tree/main/0x00-hello_world)
+- ### [Hello world and the compilation process in C](https://github.com/leulyk/alx-low_level_programming/tree/main/0x00-hello_world)
 
 - ### [Conditions and loops](https://github.com/leulyk/alx-low_level_programming/tree/main/0x01-variables_if_else_while)
 
