@@ -1,7 +1,7 @@
 # [ALX Low Level Programming](https://github.com/leulyk/alx-low_level_programming)
 
-![ALX](https://lh3.googleusercontent.com/oVJxT1yn7vwaEM8t9A5MGL6emG0j-_uqHa5H8ikWLvl6Ka-nVmUJZblqWDqPiY-S6itPLnZNgcc8rviK8AVT65l_a3zHiyctwy8=s0 = 100x100)
-![Holberton](https://blog.holbertonschool.com/wp-content/uploads/2019/04/instagram_feed180.jpg = 100x100)
+<img src="https://lh3.googleusercontent.com/oVJxT1yn7vwaEM8t9A5MGL6emG0j-_uqHa5H8ikWLvl6Ka-nVmUJZblqWDqPiY-S6itPLnZNgcc8rviK8AVT65l_a3zHiyctwy8=s0" width="100" height="100"/>
+<img src="https://blog.holbertonschool.com/wp-content/uploads/2019/04/instagram_feed180.jpg" width = "100" height="100"/>
 
 > This repository contains solutions to projects on low level programming using C on the ALX Software Engineering program.
 
