@@ -50,3 +50,5 @@
 - ### [Bit manipulation](https://github.com/leulyk/alx-low_level_programming/tree/main/0x14-bit_manipulation)
 
 - ### [File I/O](https://github.com/leulyk/alx-low_level_programming/tree/main/0x15-file_io)
+
+- ### [Doubly linked lists](https://github.com/leulyk/alx-low_level_programming/0x17-doubly_linked_lists)
