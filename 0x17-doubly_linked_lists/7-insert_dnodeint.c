@@ -40,7 +40,8 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int num)
 		}
 		counter++;
 		previous = current;
-		current = current->next;
+		if (current)
+			current = current->next;
 	} while (previous);
 
 	free(newnode);
