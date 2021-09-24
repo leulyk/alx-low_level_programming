@@ -52,3 +52,7 @@
 - ### [File I/O](https://github.com/leulyk/alx-low_level_programming/tree/main/0x15-file_io)
 
 - ### [Doubly linked lists](https://github.com/leulyk/alx-low_level_programming/tree/main/0x17-doubly_linked_lists)
+
+- ### [Dynamic libraries](https://github.com/leulyk/alx-low_level_programming/tree/main/0x18-dynamic_libraries)
+
+- ### [Stacks and Queues](https://github.com/leulyk/monty)
