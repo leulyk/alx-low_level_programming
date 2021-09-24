@@ -94,9 +94,9 @@
 	    Your file should contain the exact result, no new line, no extra space
 
 
-### 11. Crackme5 (*not implemented)
+### 11. Crackme5 (*not implemented*)
 
-	Write a keygen for crackme5(https://github.com/holbertonschool/0x17.c)
+	Write a keygen for [crackme5](https://github.com/holbertonschool/0x17.c)
 
 	    Usage of the crackme: ./crackme5 username key
 	    The crackme will segfault if you do not enter the correct key for the user
