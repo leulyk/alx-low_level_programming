@@ -51,7 +51,7 @@
 
 	Create a dynamic library that contains C functions that can be called from Python. See example for more detail.
 
-### 3. [Code injection: Win the Giga Millions!](https://github.com/leulyk/alx-low_level_programming/blob/main/0x18-dynamic_libraries/101-make_me_win.sh)
+### 3. Code injection: Win the Giga Millions! (*not implemented*)
 
 	I bought a ticket for the Giga Millions and chose these numbers: 9, 8, 10, 24, 75 + 9. If you could run two commands on the same server where the Giga Millions program runs, could you make me win the Jackpot?
 
