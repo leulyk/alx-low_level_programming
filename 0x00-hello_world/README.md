@@ -84,7 +84,7 @@ At the end of this project, you are expected to be able to explain to anyone:
 	    The output file should be named the same as the C file, but with the extension .s instead of .c.
 		Example: if the C file is main.c, the output file should be main.s
 
-### 8. [UNIX is basically a simple operating system, but you have to be a genius to understand the simplicity](https://github.com/leulyk/alx-low_level_programming/blob/main/0x00-hello_world/101-quote.c)
+### 8. [UNIX is basically a simple operating system, but you have to be a genius to understand the simplicity](https://github.com/leulyk/alx-low_level_programming/blob/main/0x00-hello_world/101-quote.c) (*doesnot fulfill the requirement*)
 
 	Write a C program that prints exactly and that piece of art is useful" - Dora Korpar, 2015-10-19, followed by a new line, to the standard error.
 
