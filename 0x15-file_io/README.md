@@ -67,7 +67,7 @@
 
 ## Advanced Tasks
 
-### 4. [elf](https://github.com/leulyk/alx-low_level_programming/blob/main/0x15-file_io/100-elf_header.c)(*needs debugging*)
+### 4. [elf](https://github.com/leulyk/alx-low_level_programming/blob/main/0x15-file_io/100-elf_header.c) (*needs debugging*)
 
 	Write a program that displays the information contained in the ELF header at the start of an ELF file.
 
