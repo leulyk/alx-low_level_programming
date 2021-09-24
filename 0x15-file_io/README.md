@@ -67,7 +67,7 @@
 
 ## Advanced Tasks
 
-### 4. elf
+### 4. [elf](https://github.com/leulyk/alx-low_level_programming/blob/main/0x15-file_io/100-elf_header.c)(*needs debugging*)
 
 	Write a program that displays the information contained in the ELF header at the start of an ELF file.
 
@@ -87,7 +87,3 @@
 	    You are allowed to use read a maximum of 2 times at runtime
 	    You are allowed to have as many functions as you want in your source file
 	    You are allowed to use printf
-
-## Authors
-
-	Leul Yiheyis
