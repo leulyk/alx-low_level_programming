@@ -14,13 +14,25 @@
  */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
-	hash_node_t *newnode;
+	hash_node_t *newnode, *current;
 	unsigned long int index;
 
 	if (ht == NULL || key == NULL || strcmp(key, "") == 0 || value == NULL)
 		return (0);
 
 	index = key_index((const unsigned char *)key, ht->size);
+
+	current = ht->array[index];
+	while (current)
+	{
+		if (strcmp(current->key, key) == 0)
+		{
+			free(current->value);
+			current->value = strdup(value);
+			return (1);
+		}
+		current = current->next;
+	}
 
 	newnode = malloc(sizeof(hash_node_t));
 	if (newnode == NULL)
