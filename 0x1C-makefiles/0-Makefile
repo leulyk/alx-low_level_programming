@@ -3,4 +3,4 @@
 # rules: all
 
 all:
-	gcc -Wall -Werror -Wextra -pedantic -std=gnu89 school.c main.c -o school
+	gcc main.c school.c -o school
