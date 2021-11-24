@@ -1,0 +1,12 @@
+# additional variables
+
+NAME = school
+CC = gcc
+SRC = main.c school.c
+OBJ = main.o school.o
+
+$(OBJ): %.o: %.c
+	$(CC) -o $@ -c $<
+
+all:
+	$(CC) $(OBJ) -o $(NAME)
