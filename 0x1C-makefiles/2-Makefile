@@ -3,10 +3,10 @@
 NAME = school
 CC = gcc
 SRC = main.c school.c
-OBJ = main.o school.o
+OBJ = $(SRC:%.c=%.o)
 
-$(OBJ): %.o: %.c
-	$(CC) -o $@ -c $<
+%.o: %.c
+	$(CC) -c $< -o $@
 
-all:
+all: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
