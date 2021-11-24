@@ -3,4 +3,4 @@
 # rules: all
 
 all:
-	gcc holberton.c main.c -o school
+	gcc -Wall -Werror -Wextra -pedantic -std=gnu89 school.c main.c -o school
