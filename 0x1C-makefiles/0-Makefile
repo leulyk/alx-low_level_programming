@@ -2,5 +2,5 @@
 # name of the executable: school
 # rules: all
 
-all: holberton.c main.c
+all:
 	gcc -Wall -Werror -Wextra -pedantic -std=gnu89 holberton.c main.c -o school
