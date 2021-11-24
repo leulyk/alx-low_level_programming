@@ -1,6 +1,2 @@
-# First makefile
-# name of the executable: school
-# rules: all
-
 all:
 	gcc holberton.c main.c -o school
