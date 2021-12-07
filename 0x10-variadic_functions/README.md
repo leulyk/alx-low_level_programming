@@ -1,1 +1,1 @@
-This folder contains solution to exercises on variadic functions.
+# This project is for learning variadic functions in C.
