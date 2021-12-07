@@ -55,4 +55,6 @@
 
 - ### [Dynamic libraries](https://github.com/leulyk/alx-low_level_programming/tree/main/0x18-dynamic_libraries)
 
-- ### [Stacks and Queues](https://github.com/leulyk/monty)
+- ### [Hash tables](https://github.com/leulyk/alx-low_level_programming/tree/main/0x1A-hash_tables)
+
+- ### [Makefiles](https://github.com/leulyk/alx-low_level_programming/tree/main/0x1C-makefiles)
