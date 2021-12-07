@@ -1,1 +1,1 @@
-This folder contains solutions for problems on recursion.
+# This project is for learning recursion using C.

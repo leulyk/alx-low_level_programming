@@ -1,2 +1,1 @@
-This folder contains solutions for the thirds project on arrays, pointers
-and strings.
+# This is the third project on functions and nested loops project in C.

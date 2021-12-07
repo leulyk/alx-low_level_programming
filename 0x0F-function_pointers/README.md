@@ -1,1 +1,1 @@
-This folder contains solutions to exercises on function pointers.
+# This project is for learning function pointers in C.

@@ -1,1 +1,1 @@
-This folder contains solutions for the project on preprocessors.
+# This project is for learning macros and pre-processor directives in C.

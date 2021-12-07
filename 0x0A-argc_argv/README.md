@@ -1,2 +1,1 @@
-This folder contains solutions for projects on 
-command line arguments.
+# This project is for learning how to manipulate command line arguments in C.

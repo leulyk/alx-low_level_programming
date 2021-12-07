@@ -1,1 +1,1 @@
-This folder contains solutions for the projects on variables, if-else and while statements.
+# This project is for learning variables, conditions, and loops in C.

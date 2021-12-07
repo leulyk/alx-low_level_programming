@@ -1,2 +1,1 @@
-This folder contains solution for the projects on 
-structures and type definitions.
+# This project is for learning structures and type definitions in C.

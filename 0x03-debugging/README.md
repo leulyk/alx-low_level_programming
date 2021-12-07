@@ -1,1 +1,1 @@
-This folder contains solutions for the introduction to debugging projects.
+# This projects contains solutions for tasks on debugging an existing code.

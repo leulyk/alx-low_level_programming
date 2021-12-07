@@ -1,2 +1,1 @@
-This folder contains solutions for projects on dynamic 
-memory allocation.
+# This is the first project on dynamic memory allocation in C.

@@ -1,1 +1,1 @@
-This folder contains solution to the second functions and nested loops project.
+# This is the second project on functions and nested loops project in C.

@@ -1,2 +1,1 @@
-This folder contains solutions for the introduction to pointers
-arrays, and strings projects.
+# This is the first project on pointers, arrays, and strings in C.

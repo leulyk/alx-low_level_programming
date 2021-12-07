@@ -1,1 +1,1 @@
-This folder contains solutions for the second project on pointers, arrays and strings.
+# This is the second project on pointers, arrays, and strings in C.
