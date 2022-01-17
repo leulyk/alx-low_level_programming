@@ -1,4 +1,4 @@
-# [0x1E. C - Search algorithms]()
+# [0x1E. C - Search algorithms](https://github.com/leulyk/alx-low_level_programming/blob/main/0x1E-search_algorithms/README.md)
 
 ## Learning Objectives
 
