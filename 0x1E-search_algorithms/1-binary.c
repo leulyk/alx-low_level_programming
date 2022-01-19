@@ -38,7 +38,9 @@ int binary_search_main(int *array, size_t low, size_t high, int value)
 	size_t mid;
 
 	print_array_range(array, low, high);
-	while (low <= high)
+	if (low == high && array[low] == value)
+		return (low);
+	while (low < high)
 	{
 		mid = (low + high) / 2;
 		if (array[mid] == value)
