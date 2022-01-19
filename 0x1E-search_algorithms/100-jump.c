@@ -42,7 +42,7 @@ int jump_search(int *array, size_t size, int value)
 			array[i * block_size]);
 	}
 	printf("Value found between indexes [%ld] and [%ld]\n",
-		(i - 1) * block_size, size);
+		(i - 1) * block_size, i * block_size);
 	for (j = (i - 1) * block_size; j < size; ++j)
 	{
 		printf("Value checked array[%ld] = [%d]\n", j,
