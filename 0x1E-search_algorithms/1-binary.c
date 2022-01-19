@@ -42,7 +42,7 @@ int binary_search_main(int *array, size_t low, size_t high, int value)
 	{
 		mid = (low + high) / 2;
 		if (array[mid] == value)
-			return (value);
+			return (mid);
 		else if (value > array[mid])
 			return (binary_search_main(array, mid + 1, high, value));
 		else
