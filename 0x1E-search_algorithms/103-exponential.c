@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <math.h>
 #include "search_algos.h"
 
 int binary_search_main(int *array, size_t low, size_t high, int value);
@@ -18,7 +17,7 @@ void print_array_range(int *array, size_t low, size_t high);
  */
 int exponential_search(int *array, size_t size, int value)
 {
-	size_t bound;
+	size_t bound, bound_half;
 
 	if (!array)
 		return (-1);
@@ -30,11 +29,11 @@ int exponential_search(int *array, size_t size, int value)
 	}
 
 	bound = bound > size - 1 ? size - 1 : bound;
+	bound_half = bound % 2 == 0 ? bound / 2 : bound / 2 + 1;
 	printf("Value found between indexes [%ld] and [%ld]\n",
-			(size_t)ceil((double) bound / 2), bound);
+			bound_half, bound);
 
-	return (binary_search_main(array, (int)ceil((double)bound / 2),
-				bound, value));
+	return (binary_search_main(array, bound_half, bound, value));
 }
 
 /**
