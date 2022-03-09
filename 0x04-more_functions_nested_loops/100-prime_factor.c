@@ -19,6 +19,11 @@ int main(void)
 			if (is_prime(i))
 			{
 				num = num / i;
+				if (is_prime(num))
+				{
+					maxprime = num;
+					break;
+				}
 				if (i > maxprime)
 				{
 					maxprime = i;
